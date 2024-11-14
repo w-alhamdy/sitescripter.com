@@ -50,7 +50,7 @@ body {
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 .nav {
     position: fixed;
@@ -199,13 +199,13 @@ a:hover .tooltip,
     }
 
     .home-info h1 {
-        font-size: 5.5rem;
+        font-size: 3rem;
         color: var(--main-color);
         line-height: 1;
     }
 
     .home-info h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .desc {
@@ -255,8 +255,8 @@ a:hover .tooltip,
     }
 .img-box {
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
     background: linear-gradient(var(--bg-color),var(--main-color));
     border-radius: 50%;
     border: .5rem solid var(--main-color);
@@ -296,7 +296,7 @@ a:hover .tooltip,
 }
 
 .about-info .title {
-    text-align: left;
+    text-align: center;
 }
 
 .about-info h3{
@@ -649,10 +649,6 @@ background: var(--main-color);
     }
 } 
 
-    html {
-        font-size: 55%;
-    }
-
 
 @media screen and (max-width: 992px) {
     .section {
@@ -672,7 +668,7 @@ background: var(--main-color);
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 35%;
     }
 
     .nav {
