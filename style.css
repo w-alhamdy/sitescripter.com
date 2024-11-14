@@ -296,7 +296,7 @@ a:hover .tooltip,
 }
 
 .about-info .title {
-    text-align: center;
+    text-align: left;
 }
 
 .about-info h3{
@@ -650,6 +650,7 @@ background: var(--main-color);
 } 
 
 
+
 @media screen and (max-width: 992px) {
     .section {
         padding: 0 4%;
@@ -668,7 +669,7 @@ background: var(--main-color);
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 35%;
+        font-size: 30%;
     }
 
     .nav {
@@ -707,7 +708,7 @@ background: var(--main-color);
 .resume,
 .portfolio {
     padding-top: 1rem;
-    padding-bottom: 22rem;
+    padding-bottom: 20rem;
 }    
 .tab-box {
     margin-top: 0;
