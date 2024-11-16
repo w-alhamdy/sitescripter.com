@@ -44,9 +44,14 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     color: var(--white-color);
     overflow: hidden;
     background-attachment: scroll;
+    background: var(--bg-color);
 }
 
 p {
@@ -255,8 +260,8 @@ a:hover .tooltip,
     }
 .img-box {
     position: relative;
-    width: 10vw;
-    height: 10vw;
+    width: 30vw;
+    height: 30vw;
     background: linear-gradient(var(--bg-color),var(--main-color));
     border-radius: 50%;
     border: .5rem solid var(--main-color);
@@ -587,60 +592,92 @@ background: var(--main-color);
     color: var(--main-color);
 }
 
-.contact {
-    padding-top: 2rem;
-    padding-bottom: 18rem;
+.contact h2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-.contact-wrapper {
-    display: flex;
-    justify-content: center;
-    height: 100%;
+.contact h3 {
+    font-size: 20px;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 1px;
 }
 
 .contact-form {
+width: 600px;
+text-align: center;   
+}
+
+.form .input-box {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 70rem;
 }
 
-.contact-form h3 {
-    font-size: 3rem;
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.input-box .input-field {
+    width: 48.5%;
 }
 
-.contact-form .field-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.field .item {
+    width: 100%;
+    padding: 6px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #ededed;
+    margin: 8px 0;
 }
 
-.contact-form .field-box input,
-.contact-form .field-box textarea {
-    flex: 1 1 30rem;
-    padding: 2rem;
-    background: var(--third-bg-color);
-    border-radius: .6rem;
-    font-size: 1.6rem;
-    color: var(--white-color);
+.field.error .item {
+    border-color: #d93025;
 }
 
-.contact-form .field-box textarea {
-    height: 20rem;
+.field .item::placeholder {
+    color: rgba(225, 225, 225, .3);
+}
+
+.error-txt {
+    font-size: 14px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
     resize: none;
-    
 }
 
-.contact-form .contact-btn {
-    margin-top: 2rem;
+form .textarea-field .error-txt {
+    margin-top: -10px;
 }
 
-.contact-form .contact-btn .btn {
-    cursor: pointer;
+form.btn {
+    padding: 12px 32px;
+    background: var(--main-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px var(--main-color);
+font-size: 16px;
+color: var(#333841);
+letter-spacing: 1px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 20px;
+transition: .5s;
 }
+
+form button:hover {
+    box-shadow: none;
+}
+
 
 /* BREAKPOINTS */
 @media screen and (max-width: 1200px) {
@@ -670,6 +707,7 @@ background: var(--main-color);
 @media screen and (max-width: 768px) {
     html {
         font-size: 30%;
+        cursor: grab;
     }
 
     .nav {
