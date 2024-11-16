@@ -64,6 +64,7 @@
     Thank you for visiting, and I hope you find inspiration in my projects. Let’s connect and collaborate to turn your vision into reality!.</p>
 <div class="btn-sci">
     <a href="#" class="btn">Download CV</a>
+    
    
     <div class="sci">
         <a href="#">
@@ -391,41 +392,60 @@ Let’s connect and create something amazing together!
 <section class="section contact active">
     <h2 class="title">Contact</h2>
     <div class="contact-wrapper">
-        <form action="" class="contact-form">
+        <form action="#" class="input-box">
 <h3>Let's Work Together!</h3>
 <div class="field-box">
-    <input type="text" placeholder="Full Name" required>
-    <input type="text" placeholder="Email Address" required>
-    <input type="hidden" name="_cc" value="another@email.com">
-    <input type="hidden" name="_next" value="https://w-alhamdy.github.io/sitescripter.com/thankyou.html">
-    <input type="hidden" name="_next" value="https://https://w-alhamdy.github.io/sitescripter.com//thankyou.html">
-    <input type="text" placeholder="Phone Number" required>
-    <input type="text" placeholder="Email Subject" required>
-    <textarea name="" id="" placeholder="Your Message" required></textarea>
-    <input type="hidden" name="_autoresponse" value="Subject: Thank You for Your Message!
-
-    Hi there,
-    
-    Thank you for reaching out! I’ve received your email and will respond to you within 1-2 business days. Your message is important to me, and I appreciate your patience.
-    
-    Best regards,">
-    <form action="w.alhamdy@icloud.com" method="POST">
+    <form action="#">
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name"
+                class="item" autocomplete="off">
+                <div class="error-txt">Full Name can't be blank</div>
+            </div>
+            </div>
+            <div class="input-field field">
+                <input type="email" placeholder="Email Address"
+                id="email" class="item" autocomplete="off">
+                <div class="error-txt email">Email Address can't be blank</div>
+            </div>
         
-</div>
-<div class="contact-btn">
-    <button type="submit" class="btn">Send Message</button>
-</div>
-        </form>
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number"
+                id="phone" class="item"  autocomplete="off">
+                <div class="error-txt">Phone Number can't be blank</div>
+            </div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Subject"
+                id="subject" class="item" autocomplete="off">
+                <div class="error-txt">Subject can't be blank</div>
     </div>
+    
+    <div class="textarea-field field">
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
+        autocomplete="off"></textarea>
+        <div class="error-txt">Message can't be blank</div>
+    </div>
+    
+        <button type="submit" class="btn">Send Message</button>
+    
+
+</form>
+</div>
+</form>
+
+</div>
+
 </section>
-    </div>
-</div>
-
-
-<!--Javascript file script-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>
+<!--Javascript file script-->
+
 <script src="https://kit.fontawesome.com/4820db6cf3.js" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
 
