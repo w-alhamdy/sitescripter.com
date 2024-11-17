@@ -9,6 +9,7 @@
     border: none;
     outline: none;
     font-family: "Poppins", sans-serif;
+    
 }
 :root {
     --nav-color: rgba(46, 42, 84, 0.1);
@@ -56,6 +57,7 @@ body {
 
 p {
     font-size: 2rem;
+    padding: 0 5rem;
 }
 .nav {
     position: fixed;
@@ -145,6 +147,7 @@ a:hover .tooltip,
     transition: 2s;
     animation: animate-cube 4s ease-in-out backwards;
 }
+
 
 @keyframes animate-cube {
     0% {
@@ -707,7 +710,7 @@ form button:hover {
 @media screen and (max-width: 768px) {
     html {
         font-size: 30%;
-        cursor: grab;
+        cursor: pointer;
     }
 
     .nav {
