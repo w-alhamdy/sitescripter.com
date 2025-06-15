@@ -439,7 +439,7 @@ transition: .3s;
 
 .resume-box.skills .resume-item:hover i {
     color: var(--main-color);
-    box-shadow: 0 0 8rem var(--main-color);
+   
 
 }
 
@@ -465,11 +465,11 @@ justify-content: flex-end;
     background: var(--third-bg-color);
     border-radius: .8rem;
     z-index: 1;
-    opacity: 0;
+    opacity: .5;
     transition: .3s;
 }
 .portfolio-box.work .portfolio-item:hover::before {
-    opacity: .9;
+    opacity: .7;
 }
 
 .portfolio-item .work-img {
@@ -507,7 +507,7 @@ justify-content: flex-end;
 }
 
 .portfolio-item .work-info .tech-used {
-    color: var(--main-color);
+    color: var(--white-color);
     border-bottom: .1rem solid var(--white-color);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -526,7 +526,7 @@ justify-content: flex-end;
 
 .portfolio-item .work-icon a:hover {
     background: var(--main-color);
-    box-shadow: 0 0 8rem var(--main-color);
+   
 }
 
 .portfolio-item .work-icon a:nth-child(1) {
@@ -547,12 +547,13 @@ justify-content: flex-end;
 .portfolio-item .service-icon .icon {
     font-size: 5rem;
     margin-left: -.3rem;
+    color: var(--white-color)
 }
 
 .portfolio-item .service-icon a i {
     transform: rotate(-135deg);
     color: var(--main-color);
-    background-color: var(--white-color);
+
 }
 
 .portfolio-item .service-icon {
@@ -560,12 +561,14 @@ justify-content: flex-end;
     justify-content: space-between;
     align-items: center;
     margin-bottom: .5rem;
+    
 }
 
 .portfolio-item .service-icon .icon {
     font-size: 5rem;
     margin-left: -.3rem;
     transition: .3s;
+  
 }
 
 
@@ -574,7 +577,7 @@ justify-content: flex-end;
 }
 
 .portfolio-item:hover .service-icon a {
-background: var(--main-color);
+background: var(--white-color);
 }
 
 .portfolio-item .service-icon a i {
@@ -584,7 +587,7 @@ background: var(--main-color);
 
 .portfolio-item .service-icon a:hover i {
     transform: rotate(-180deg);
-    color: var(--bg-color);
+    color: var(--main-color);
 }
 
 .portfolio-box.service .portfolio-item h4 {
