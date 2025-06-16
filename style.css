@@ -50,7 +50,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: var(--white-color);
-    overflow: hidden;
+    overflow: auto;
     background-attachment: scroll;
     background: var(--bg-color);
 }
