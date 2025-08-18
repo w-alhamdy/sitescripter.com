@@ -150,6 +150,45 @@ a:hover .tooltip,
 }
 
 
+/* Portfolio Layout */
+.portfolio-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Thumbnail Images */
+.portfolio-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.view-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #c0392b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #a93226;
+}
+
+
 @keyframes animate-cube {
     0% {
         transform: scale(0) rotateY(-360deg);
@@ -882,3 +921,4 @@ form button:hover {
     }
 
 }
+
