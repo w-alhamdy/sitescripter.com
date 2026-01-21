@@ -153,3 +153,83 @@ form.addEventListener("submit", (e) => {
     return false;
 }
 });
+
+
+
+// Get a reference to the form and the status paragraph
+var form = document.getElementById("contact-form");
+var status = document.getElementById("form-status");
+
+// Handle the form submission event
+async function handleSubmit(event) {
+    event.preventDefault(); // Stop the page from refreshing
+
+    // Get the data from the form
+    var data = new FormData(event.target);
+
+    // Send the data using the fetch API
+    try {
+        const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json' // Tells Formspree we expect a JSON response
+            }
+        });
+
+        if (response.ok) {
+            status.innerHTML = "Thanks! Your message has been sent successfully.";
+            form.reset(); // Clear the form fields
+        } else {
+            const data = await response.json();
+            if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+                status.innerHTML = "Oops! There was a problem sending your message.";
+            }
+        }
+    } catch (error) {
+        status.innerHTML = "An error occurred. Please try again later.";
+    }
+}
+
+// Add an event listener to the form's submit event
+form.addEventListener("submit", handleSubmit);
+
+// Get a reference to the form and the status paragraph
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+// Handle the form submission event
+async function handleSubmit(event) {
+    event.preventDefault(); // Stop the page from refreshing
+    var data = new FormData(event.target);
+
+    try {
+        const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            status.innerHTML = "Thanks! Your message has been sent successfully.";
+           // form.reset(); // <--- THIS LINE CLEARS THE FORM FIELDS
+
+getElementById('email').value = '';
+getElementById('message').value ='';
+
+        } else {
+            // ... error handling code ...
+            status.innerHTML = "Oops! There was a problem sending your message.";
+        }
+    } catch (error) {
+        status.innerHTML = "An error occurred. Please try again later.";
+    }
+}
+
+// Add an event listener to the form's submit event
+form.addEventListener("submit", handleSubmit);
+
